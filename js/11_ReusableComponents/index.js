@@ -7,6 +7,8 @@ import SlideText from '../common/SlideText'
 import {SlideUpFadeIn} from '../common/Animations'
 import routes, { getNext } from '../routes'
 
+import ExamplePropType from './ExamplePropType'
+
 import styles from './styles'
 
 export default class DataAndState extends PureComponent {
@@ -84,6 +86,7 @@ export default class DataAndState extends PureComponent {
           <Slide>
             <SlideText>use</SlideText>
             <SlideText>PropTypes</SlideText>
+            <ExamplePropType category='GOOD' text='simple text' />
           </Slide>
 
           <Slide>
