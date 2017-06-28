@@ -7,6 +7,8 @@ import SlideText from '../common/SlideText'
 import {SlideUpFadeIn} from '../common/Animations'
 import routes, { getNext } from '../routes'
 
+import styles from './styles'
+
 export default class DataAndState extends PureComponent {
 
   static navigationOptions = {
@@ -50,17 +52,13 @@ export default class DataAndState extends PureComponent {
           </Slide>
 
           <Slide>
-            <SlideText>state for data</SlideText>
-          </Slide>
-
-          <Slide>
-            <SlideText>use state</SlideText>
+            <SlideText>use React State</SlideText>
             <SlideText>as little</SlideText>
             <SlideText>as possible</SlideText>
           </Slide>
 
           <Slide>
-            <SlideText>state updates</SlideText>
+            <SlideText>State updates</SlideText>
             <SlideText>may trigger</SlideText>
             <SlideText>expensive rerenders</SlideText>
           </Slide>
@@ -72,8 +70,8 @@ export default class DataAndState extends PureComponent {
           </Slide>
 
           <Slide>
-            <SlideText>store</SlideText>
-            <SlideText>state</SlideText>
+            <SlideText>keep</SlideText>
+            <SlideText>data</SlideText>
             <SlideText>in one place</SlideText>
           </Slide>
 
@@ -88,37 +86,3 @@ export default class DataAndState extends PureComponent {
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex:1,
-    backgroundColor:'#1589ee',
-  },
-  item:{
-    backgroundColor:'white',
-    padding:10,
-    paddingLeft:15,
-    paddingRight:15,
-    borderRadius:5,
-    margin:10
-  },
-  itemLabel: {
-    textAlign:'center',
-    fontSize:32,
-    fontFamily: 'SalesforceSans-Light',
-  },
-  icon: {
-    width: 24,
-    height: 24,
-  },
-  mainIconContainer: {
-    flexDirection:'row',
-    justifyContent:'center',
-    alignItems:'center'
-  },
-  mainIcon: {
-    marginTop:50,
-    width: 80,
-    height: 80,
-  }
-})

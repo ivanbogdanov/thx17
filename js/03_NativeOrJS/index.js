@@ -7,8 +7,9 @@ import SlideText from '../common/SlideText'
 import {SlideUpFadeIn} from '../common/Animations'
 import routes, { getNext } from '../routes'
 
+import styles from './styles'
 
-export default class NativeORJS extends PureComponent {
+export default class NativeOrJS extends PureComponent {
 
   static navigationOptions = {
     drawerLabel: 'Code JS or Native?',
@@ -89,25 +90,3 @@ export default class NativeORJS extends PureComponent {
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex:1,
-    backgroundColor:'#25b4e9',
-  },
-  icon: {
-    width: 24,
-    height: 24,
-  },
-  mainIconContainer: {
-    flexDirection:'row',
-    justifyContent:'center',
-    alignItems:'center',
-    marginTop:50,
-  },
-  mainIcon: {
-    flex:0,
-    width: 80,
-    height: 80,
-  }
-})

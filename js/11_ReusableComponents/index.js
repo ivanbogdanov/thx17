@@ -60,6 +60,12 @@ export default class DataAndState extends PureComponent {
           </Slide>
 
           <Slide>
+            <SlideText>NPM</SlideText>
+            <SlideText>packages</SlideText>
+            <SlideText>for common code</SlideText>
+          </Slide>
+
+          <Slide>
             <SlideText>use</SlideText>
             <SlideText>PropTypes</SlideText>
           </Slide>

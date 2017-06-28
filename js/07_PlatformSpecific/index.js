@@ -54,7 +54,8 @@ export default class PlatformSpecific extends PureComponent {
           </Slide>
 
           <Slide>
-            <SlideText>Native components</SlideText>
+            <SlideText>Some</SlideText>
+            <SlideText>Native Components</SlideText>
             <SlideText>depend on</SlideText>
             <SlideText>platform /</SlideText>
             <SlideText>os version</SlideText>

@@ -7,19 +7,10 @@ import SlideText from '../common/SlideText'
 import {SlideUpFadeIn} from '../common/Animations'
 import routes, { getNext } from '../routes'
 
+import CustomLayoutSpring from './CustomLayoutSpring'
 
-const CustomLayoutSpring = {
-  duration: 300,
-  create: {
-    type: LayoutAnimation.Types.spring,
-    property: LayoutAnimation.Properties.scaleXY,
-    springDamping: 2.0,
-  },
-  update: {
-    type: LayoutAnimation.Types.spring,
-    springDamping: 0.5,
-  }
-}
+import styles from './styles'
+
 
 
 export default class LayoutAnimations extends PureComponent {
@@ -71,8 +62,7 @@ export default class LayoutAnimations extends PureComponent {
     const items = []
     let i = 0;
     do {
-       i += 1;
-       items.push(this._renderItem(i))
+       items.push(this._renderItem(++i))
     } while (i < this.state.count)
     return items
   }
@@ -108,42 +98,12 @@ export default class LayoutAnimations extends PureComponent {
             <SlideText>easy to configure</SlideText>
           </Slide>
 
+          <Slide>
+            <SlideText>easy to reuse</SlideText>
+          </Slide>
+
         </Swiper>
       </View>
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex:1,
-    backgroundColor:'#d4504c',
-  },
-  item:{
-    backgroundColor:'white',
-    padding:10,
-    paddingLeft:15,
-    paddingRight:15,
-    borderRadius:5,
-    margin:10
-  },
-  itemLabel: {
-    textAlign:'center',
-    fontSize:32,
-    fontFamily: 'SalesforceSans-Light',
-  },
-  icon: {
-    width: 24,
-    height: 24,
-  },
-  mainIconContainer: {
-    flexDirection:'row',
-    justifyContent:'center',
-    alignItems:'center'
-  },
-  mainIcon: {
-    marginTop:50,
-    width: 80,
-    height: 80,
-  }
-})

@@ -85,6 +85,7 @@ export default class Bridge extends PureComponent {
             <SlideText>server/client:</SlideText>
             <SlideText> </SlideText>
             <SlideText>native</SlideText>
+            <SlideText>/</SlideText>
             <SlideText>JS</SlideText>
           </Slide>
 

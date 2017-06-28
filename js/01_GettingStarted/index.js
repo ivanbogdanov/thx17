@@ -8,6 +8,7 @@ import SlideText from '../common/SlideText'
 import {SlideUpFadeIn} from '../common/Animations'
 import routes, { getNext } from '../routes'
 
+import styles from './styles'
 
 export default class ProductivityAndPerformance extends PureComponent {
 
@@ -121,7 +122,14 @@ export default class ProductivityAndPerformance extends PureComponent {
             <SlideText>Android, iOS, web</SlideText>
           </Slide>
 
+
           <Slide>
+            <SlideText>How to keep</SlideText>
+            <SlideText>your code</SlideText>
+            <SlideText>crystal clear</SlideText>
+            <SlideText>and</SlideText>
+            <SlideText>performant?</SlideText>
+
             <SlideUpFadeIn delay={300} style={styles.mainIconContainer}>
               <Theme.Icons.Utility
                 name="question"
@@ -129,14 +137,7 @@ export default class ProductivityAndPerformance extends PureComponent {
                 iconColor='#ffffff'
               />
             </SlideUpFadeIn>
-          </Slide>
 
-          <Slide>
-            <SlideText>How to keep</SlideText>
-            <SlideText>your growing code</SlideText>
-            <SlideText>crystal clear</SlideText>
-            <SlideText>and</SlideText>
-            <SlideText>performant?</SlideText>
           </Slide>
 
         </Swiper>
@@ -145,39 +146,3 @@ export default class ProductivityAndPerformance extends PureComponent {
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex:1,
-    backgroundColor:'#1589ee',
-  },
-  wrapper:{
-    flex:1,
-    flexDirection:'column',
-    justifyContent:'center',
-    alignItems:'center',
-  },
-  titleContainer: {
-    paddingTop:50,
-    paddingBottom:50,
-  },
-  title: {
-    textAlign:'center',
-    fontSize:24,
-    color:'white'
-  },
-  icon: {
-    width: 24,
-    height: 24,
-  },
-  mainIconContainer: {
-    flexDirection:'row',
-    justifyContent:'center',
-    alignItems:'center'
-  },
-  mainIcon: {
-    marginTop:50,
-    width: 80,
-    height: 80,
-  }
-})
