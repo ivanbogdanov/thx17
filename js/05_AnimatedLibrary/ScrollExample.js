@@ -25,8 +25,7 @@ export default class ScrollExample extends Component {
     const items = []
     let i = 0;
     do {
-       i += 1;
-       items.push(this._renderItem(i))
+       items.push(this._renderItem(++i))
     } while (i < 30)
     return items
   }
@@ -76,6 +75,6 @@ const styles = StyleSheet.create({
     textAlign:'center',
     fontSize:32,
     fontFamily: 'SalesforceSans-Light',
-    color:'white',    
+    color:'white',
   },
 })
