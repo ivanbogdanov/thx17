@@ -5,6 +5,11 @@ import CustomNativeViews from './04_CustomNaviteViews'
 import AnimatedLibrary from './05_AnimatedLibrary'
 import LayoutAnimations from './06_LayoutAnimations'
 import PlatformSpecific from './07_PlatformSpecific'
+import Icons from './08_Icons'
+import DataAndState from './09_DataAndState'
+import Redux from './10_Redux'
+import ReusableComponents from './11_ReusableComponents'
+import LetsBuild from './12_LetsBuild'
 
 export function getNext (currentRouteName) {
   const keys = Object.keys(routes)
@@ -39,6 +44,21 @@ const routes = {
   PlatformSpecific: {
     screen: PlatformSpecific,
   },
+  Icons: {
+    screen: Icons,
+  },
+  DataAndState: {
+    screen: DataAndState,
+  },
+  Redux: {
+    screen: Redux,
+  },
+  ReusableComponents: {
+    screen: ReusableComponents
+  },
+  LetsBuild: {
+    screen: LetsBuild,
+  }
 }
 
 export default routes
