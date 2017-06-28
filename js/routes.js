@@ -3,7 +3,8 @@ import Bridge from './02_Bridge'
 import NativeOrJS from './03_NativeOrJS'
 import CustomNativeViews from './04_CustomNaviteViews'
 import AnimatedLibrary from './05_AnimatedLibrary'
-import LayoutAnimations from './02_LayoutAnimations'
+import LayoutAnimations from './06_LayoutAnimations'
+import PlatformSpecific from './07_PlatformSpecific'
 
 export function getNext (currentRouteName) {
   const keys = Object.keys(routes)
@@ -34,6 +35,9 @@ const routes = {
   },
   LayoutAnimations: {
     screen: LayoutAnimations,
+  },
+  PlatformSpecific: {
+    screen: PlatformSpecific,
   },
 }
 

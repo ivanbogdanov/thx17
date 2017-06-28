@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, LayoutAnimation, TouchableOpacity } from 'react-native'
 import Theme from 'react.force.base.theme'
 import Swiper from '../common/Swiper'
 import Slide from '../common/Slide'
@@ -7,14 +7,15 @@ import SlideText from '../common/SlideText'
 import {SlideUpFadeIn} from '../common/Animations'
 import routes, { getNext } from '../routes'
 
+import Example from './Example'
 
-export default class Bridge extends PureComponent {
+export default class PlatformSpecific extends PureComponent {
 
   static navigationOptions = {
-    drawerLabel: 'Bridge Communication',
+    drawerLabel: 'Platform Specific code',
     drawerIcon: ({ tintColor }) => (
       <Theme.Icons.Utility
-        name="sort"
+        name="event"
         style={styles.icon}
       />
     )
@@ -25,6 +26,9 @@ export default class Bridge extends PureComponent {
     const { nextRouteName,nextRouteComponent } = getNext(this.props.navigation.state.routeName)
     this.nextRouteName = nextRouteName
     this.nextRouteComponent = nextRouteComponent
+    this.state = {
+      count:1
+    }
   }
 
   _handleNext() {
@@ -37,52 +41,40 @@ export default class Bridge extends PureComponent {
       <View style={styles.container}>
         <Swiper onNext={this._handleNext.bind(this)} nextLabel={this.nextRouteComponent.navigationOptions.drawerLabel}>
           <Slide>
-            <SlideText>Bridge</SlideText>
-            <SlideText>Communication</SlideText>
+            <SlideText>Platform</SlideText>
+            <SlideText>Specific</SlideText>
+            <SlideText>code</SlideText>
             <SlideUpFadeIn delay={300} style={styles.mainIconContainer}>
               <Theme.Icons.Utility
-                name="sort"
+                name="event"
                 style={styles.mainIcon}
                 iconColor='#ffffff'
-                height={80}
               />
             </SlideUpFadeIn>
           </Slide>
 
           <Slide>
-            <SlideText>can</SlideText>
-            <SlideText>be</SlideText>
-            <SlideText>slow</SlideText>
-          </Slide>
-
-          <Slide>
-            <SlideText>minimize</SlideText>
-            <SlideText>serialization</SlideText>
-          </Slide>
-
-          <Slide>
-            <SlideText>catching</SlideText>
-          </Slide>
-
-          <Slide>
-            <SlideText>batching</SlideText>
-          </Slide>
-
-          <Slide>
-            <SlideText>server/client:</SlideText>
-            <SlideText> </SlideText>
-            <SlideText>native</SlideText>
-            <SlideText>JS</SlideText>
+            <SlideText>Native components</SlideText>
+            <SlideText>depend on</SlideText>
+            <SlideText>platform /</SlideText>
+            <SlideText>os version</SlideText>
           </Slide>
 
           <Slide>
             <SlideText>Example:</SlideText>
             <SlideText> </SlideText>
-            <SlideText>Salesforce MobileSDK ReactNative</SlideText>
-            <SlideText> </SlideText>
-            <SlideText>native:</SlideText>
-            <SlideText>database</SlideText>
-            <SlideText>networking</SlideText>
+            <SlideText>Date Picker,</SlideText>
+            <SlideText>Android ripple effect</SlideText>
+            <SlideText>etc</SlideText>
+          </Slide>
+
+          <Slide>
+            <Example />
+          </Slide>
+
+          <Slide>
+            <SlideText>platform-specific</SlideText>
+            <SlideText>file extensions</SlideText>
           </Slide>
 
         </Swiper>
@@ -94,7 +86,20 @@ export default class Bridge extends PureComponent {
 const styles = StyleSheet.create({
   container: {
     flex:1,
-    backgroundColor:'#16325c',
+    backgroundColor:'#d4504c',
+  },
+  item:{
+    backgroundColor:'white',
+    padding:10,
+    paddingLeft:15,
+    paddingRight:15,
+    borderRadius:5,
+    margin:10
+  },
+  itemLabel: {
+    textAlign:'center',
+    fontSize:32,
+    fontFamily: 'SalesforceSans-Light',
   },
   icon: {
     width: 24,
@@ -103,11 +108,10 @@ const styles = StyleSheet.create({
   mainIconContainer: {
     flexDirection:'row',
     justifyContent:'center',
-    alignItems:'center',
-    marginTop:50,
+    alignItems:'center'
   },
   mainIcon: {
-    flex:0,
+    marginTop:50,
     width: 80,
     height: 80,
   }

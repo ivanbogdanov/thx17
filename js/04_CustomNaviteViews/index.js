@@ -71,7 +71,7 @@ export default class CustomNativeViews extends PureComponent {
 const styles = StyleSheet.create({
   container: {
     flex:1,
-    backgroundColor:'#25b4e9',
+    backgroundColor:'#16325c',
   },
   icon: {
     width: 24,

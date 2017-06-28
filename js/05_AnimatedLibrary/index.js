@@ -66,7 +66,7 @@ export default class AnimatedLibrary extends PureComponent {
 
           <Slide>
             <SlideText>Animatable Components:</SlideText>
-              <SlideText>Animatable Components:</SlideText>
+              <SlideText> </SlideText>
               <SlideText>Image</SlideText>
               <SlideText>ScrollView</SlideText>
               <SlideText>Text</SlideText>
@@ -82,7 +82,7 @@ export default class AnimatedLibrary extends PureComponent {
 const styles = StyleSheet.create({
   container: {
     flex:1,
-    backgroundColor:'#25b4e9',
+    backgroundColor:'rgba(150, 0, 150, 1)',
   },
   icon: {
     width: 24,
