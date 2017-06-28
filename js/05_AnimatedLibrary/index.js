@@ -53,6 +53,8 @@ export default class AnimatedLibrary extends PureComponent {
           </Slide>
 
           <Slide>
+            <SlideText>Animated:</SlideText>
+            <SlideText> </SlideText>
             <SlideText>relationships</SlideText>
             <SlideText>between</SlideText>
             <SlideText>inputs</SlideText>

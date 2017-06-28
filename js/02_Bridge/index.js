@@ -7,6 +7,7 @@ import SlideText from '../common/SlideText'
 import {SlideUpFadeIn} from '../common/Animations'
 import routes, { getNext } from '../routes'
 
+import styles from './styles'
 
 export default class Bridge extends PureComponent {
 
@@ -58,6 +59,8 @@ export default class Bridge extends PureComponent {
           </Slide>
 
           <Slide>
+            <SlideText>bridge</SlideText>
+            <SlideText>communication</SlideText>
             <SlideText>can</SlideText>
             <SlideText>be</SlideText>
             <SlideText>slow</SlideText>
@@ -69,11 +72,13 @@ export default class Bridge extends PureComponent {
           </Slide>
 
           <Slide>
+            <SlideText>apply</SlideText>
             <SlideText>catching</SlideText>
           </Slide>
 
           <Slide>
-            <SlideText>batching</SlideText>
+            <SlideText>batch</SlideText>
+            <SlideText>requests</SlideText>
           </Slide>
 
           <Slide>
@@ -98,25 +103,3 @@ export default class Bridge extends PureComponent {
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex:1,
-    backgroundColor:'#16325c',
-  },
-  icon: {
-    width: 24,
-    height: 24,
-  },
-  mainIconContainer: {
-    flexDirection:'row',
-    justifyContent:'center',
-    alignItems:'center',
-    marginTop:50,
-  },
-  mainIcon: {
-    flex:0,
-    width: 80,
-    height: 80,
-  }
-})

@@ -32,7 +32,7 @@ export default class MapExample extends Component {
         <Text style={styles.text}>latitude: {this.state.region.latitude}</Text>
         <Text style={styles.text}>longitude: {this.state.region.longitude}</Text>
 
-        <MapView style={{flex:1,marginTop:30}}
+        <MapView style={{flex:1,margin:30}}
           initialRegion={this.state.region}
           onRegionChange={this._handleRegionChange.bind(this)}
         />

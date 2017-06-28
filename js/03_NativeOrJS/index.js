@@ -68,11 +68,6 @@ export default class NativeORJS extends PureComponent {
           </Slide>
 
           <Slide>
-            <SlideText>developer</SlideText>
-            <SlideText>skills</SlideText>
-          </Slide>
-
-          <Slide>
             <SlideText>example:</SlideText>
             <SlideText> </SlideText>
             <SlideText>rendering</SlideText>

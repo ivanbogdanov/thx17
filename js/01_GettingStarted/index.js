@@ -12,7 +12,7 @@ import routes, { getNext } from '../routes'
 export default class ProductivityAndPerformance extends PureComponent {
 
   static navigationOptions = {
-    drawerLabel: 'Productivity and Performance',
+    drawerLabel: 'Building a new project',
     drawerIcon: ({ tintColor }) => (
       <Theme.Icons.Utility
         name="topic"
@@ -40,8 +40,8 @@ export default class ProductivityAndPerformance extends PureComponent {
           nextLabel={this.nextRouteComponent.navigationOptions.drawerLabel}>
 
           <Slide>
-            <SlideText>Starting</SlideText>
-            <SlideText>a new React Native</SlideText>
+            <SlideText>Building</SlideText>
+            <SlideText>a React Native</SlideText>
             <SlideText>project</SlideText>
             <SlideUpFadeIn delay={300} style={styles.mainIconContainer}>
               <Theme.Icons.Utility
@@ -101,19 +101,34 @@ export default class ProductivityAndPerformance extends PureComponent {
           </Slide>
 
           <Slide>
-            <SlideText>a new feature:</SlideText>
-            <SlideText>integrate with 5 more APIs </SlideText>
-          </Slide>
-
-          <Slide>
-            <SlideText>build for</SlideText>
-            <SlideText>Android, iOS, web</SlideText>
+            <SlideText>integrate with 5 more APIs!!!</SlideText>
           </Slide>
 
           <Slide>
             <SlideText>your UX designer</SlideText>
-            <SlideText>is exited too:</SlideText>
-            <SlideText>and designs complex UX interactions</SlideText>
+            <SlideText>is exited too!</SlideText>
+          </Slide>
+
+          <Slide>
+            <SlideText>complex UX</SlideText>
+            <SlideText>interactions</SlideText>
+            <SlideText>and</SlideText>
+            <SlideText>animations</SlideText>
+          </Slide>
+
+          <Slide>
+            <SlideText>target several platforms</SlideText>
+            <SlideText>Android, iOS, web</SlideText>
+          </Slide>
+
+          <Slide>
+            <SlideUpFadeIn delay={300} style={styles.mainIconContainer}>
+              <Theme.Icons.Utility
+                name="question"
+                style={styles.mainIcon}
+                iconColor='#ffffff'
+              />
+            </SlideUpFadeIn>
           </Slide>
 
           <Slide>
