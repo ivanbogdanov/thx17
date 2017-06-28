@@ -1,0 +1,5 @@
+rootProject.name = 'thx17'
+include ':react.force.base.theme'
+project(':react.force.base.theme').projectDir = new File(rootProject.projectDir, '../node_modules/react.force.base.theme/android')
+
+include ':app'
