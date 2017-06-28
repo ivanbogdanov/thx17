@@ -56,6 +56,10 @@ export default class DataAndState extends PureComponent {
             <SlideText>Predictable</SlideText>
             <SlideText>State</SlideText>
             <SlideText>Management</SlideText>
+            <SlideText> </SlideText>
+            <SlideText>boilerplate</SlideText>
+            <SlideText>code</SlideText>
+
           </Slide>
 
           <Slide>
