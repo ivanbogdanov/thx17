@@ -10,10 +10,14 @@ export default class ScrollExample extends Component {
   }
 
   _renderItem(index) {
+    const color = this.scrollY.interpolate({
+        inputRange: [0, 500],
+        outputRange: ['rgba(50, 0, 50, 1)','rgba(0, 100, 150, 1)']
+    });
     return (
-      <View key={'item_'+index} style={styles.item} >
-        <Text style={styles.itemLabel}>Item: {index}</Text>
-      </View>
+      <Animated.View key={'item_'+index} style={[styles.item,{backgroundColor:color}]} >
+        <Text style={styles.itemLabel}>Item:: {index}</Text>
+      </Animated.View>
     )
   }
 
@@ -72,5 +76,6 @@ const styles = StyleSheet.create({
     textAlign:'center',
     fontSize:32,
     fontFamily: 'SalesforceSans-Light',
+    color:'white',    
   },
 })

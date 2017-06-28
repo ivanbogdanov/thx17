@@ -77,6 +77,16 @@ export default class Bridge extends PureComponent {
             <SlideText>JS</SlideText>
           </Slide>
 
+          <Slide>
+            <SlideText>Example:</SlideText>
+            <SlideText> </SlideText>
+            <SlideText>Salesforce MobileSDK ReactNative</SlideText>
+            <SlideText> </SlideText>
+            <SlideText>native:</SlideText>
+            <SlideText>database</SlideText>
+            <SlideText>networking</SlideText>
+          </Slide>
+
         </Swiper>
       </View>
     )

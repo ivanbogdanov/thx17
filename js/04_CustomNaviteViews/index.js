@@ -7,6 +7,7 @@ import SlideText from '../common/SlideText'
 import {SlideUpFadeIn} from '../common/Animations'
 import routes, { getNext } from '../routes'
 
+import MapExample from './MapExample'
 
 export default class CustomNativeViews extends PureComponent {
 
@@ -51,28 +52,14 @@ export default class CustomNativeViews extends PureComponent {
           </Slide>
 
           <Slide>
-            <SlideText>Minimal</SlideText>
-            <SlideText>bridge</SlideText>
-            <SlideText>communication</SlideText>
+            <MapExample />
           </Slide>
 
           <Slide>
-            <SlideText>Minimize</SlideText>
-            <SlideText>JS</SlideText>
-            <SlideText>bundle</SlideText>
-          </Slide>
-
-          <Slide>
-            <SlideText>no</SlideText>
-            <SlideText>heavy</SlideText>
-            <SlideText>JS libraries</SlideText>
-          </Slide>
-
-          <Slide>
-            <SlideText>example:</SlideText>
+            <SlideText>Communication:</SlideText>
             <SlideText> </SlideText>
-            <SlideText>rendering</SlideText>
-            <SlideText>localized date/time format</SlideText>
+            <SlideText>properties</SlideText>
+            <SlideText>events</SlideText>
           </Slide>
 
         </Swiper>

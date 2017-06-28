@@ -10,10 +10,14 @@ export default class ScrollExample extends Component {
   }
 
   _renderItem(index) {
+    const color = this.scrollY.interpolate({
+        inputRange: [0, 500],
+        outputRange: ['rgba(0, 100, 0, 1)','rgba(150, 0, 150, 1)']
+    });
     return (
-      <View key={'item_'+index} style={styles.item} >
-        <Text style={styles.itemLabel}>Item: {index}</Text>
-      </View>
+      <Animated.View key={'item_'+index} style={[styles.item,{backgroundColor:color}]} >
+        <Text style={styles.itemLabel}>Item:: {index}</Text>
+      </Animated.View>
     )
   }
 

@@ -1,4 +1,6 @@
 rootProject.name = 'thx17'
+include ':react-native-maps'
+project(':react-native-maps').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-maps/lib/android')
 include ':react.force.base.theme'
 project(':react.force.base.theme').projectDir = new File(rootProject.projectDir, '../node_modules/react.force.base.theme/android')
 

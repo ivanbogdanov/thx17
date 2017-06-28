@@ -2,8 +2,8 @@ import ProductivityAndPerformance from './01_ProductivityAndPerformance'
 import Bridge from './02_Bridge'
 import NativeOrJS from './03_NativeOrJS'
 import CustomNativeViews from './04_CustomNaviteViews'
+import AnimatedLibrary from './05_AnimatedLibrary'
 import LayoutAnimations from './02_LayoutAnimations'
-import AnimatedLibrary from './03_AnimatedLibrary'
 
 export function getNext (currentRouteName) {
   const keys = Object.keys(routes)
@@ -29,11 +29,11 @@ const routes = {
   CustomNativeViews: {
     screen: CustomNativeViews,
   },
-  LayoutAnimations: {
-    screen: LayoutAnimations,
-  },
   AnimatedLibrary: {
     screen: AnimatedLibrary
+  },
+  LayoutAnimations: {
+    screen: LayoutAnimations,
   },
 }
 
