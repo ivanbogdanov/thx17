@@ -50,6 +50,14 @@ export default class Bridge extends PureComponent {
           </Slide>
 
           <Slide>
+            <SlideText>make</SlideText>
+            <SlideText>bridge</SlideText>
+            <SlideText>APIs</SlideText>
+            <SlideText>as simple</SlideText>
+            <SlideText>as possible</SlideText>
+          </Slide>
+
+          <Slide>
             <SlideText>can</SlideText>
             <SlideText>be</SlideText>
             <SlideText>slow</SlideText>

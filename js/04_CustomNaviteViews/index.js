@@ -59,6 +59,7 @@ export default class CustomNativeViews extends PureComponent {
             <SlideText>Communication:</SlideText>
             <SlideText> </SlideText>
             <SlideText>properties</SlideText>
+            <SlideText>and</SlideText>
             <SlideText>events</SlideText>
           </Slide>
 

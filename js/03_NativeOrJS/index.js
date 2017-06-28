@@ -11,7 +11,7 @@ import routes, { getNext } from '../routes'
 export default class NativeORJS extends PureComponent {
 
   static navigationOptions = {
-    drawerLabel: 'JS or Native?',
+    drawerLabel: 'Code JS or Native?',
     drawerIcon: ({ tintColor }) => (
       <Theme.Icons.Utility
         name="strikethrough"
@@ -37,6 +37,7 @@ export default class NativeORJS extends PureComponent {
       <View style={styles.container}>
         <Swiper onNext={this._handleNext.bind(this)} nextLabel={this.nextRouteComponent.navigationOptions.drawerLabel}>
           <Slide>
+            <SlideText>Code</SlideText>
             <SlideText>JS or Native?</SlideText>
             <SlideUpFadeIn delay={300} style={styles.mainIconContainer}>
               <Theme.Icons.Utility
@@ -49,21 +50,26 @@ export default class NativeORJS extends PureComponent {
           </Slide>
 
           <Slide>
-            <SlideText>Minimal</SlideText>
+            <SlideText>Minimize</SlideText>
             <SlideText>bridge</SlideText>
             <SlideText>communication</SlideText>
           </Slide>
 
           <Slide>
-            <SlideText>Minimize</SlideText>
             <SlideText>JS</SlideText>
             <SlideText>bundle</SlideText>
+            <SlideText>size matters</SlideText>
           </Slide>
 
           <Slide>
-            <SlideText>no</SlideText>
-            <SlideText>heavy</SlideText>
-            <SlideText>JS libraries</SlideText>
+            <SlideText>avoid</SlideText>
+            <SlideText>duplicate</SlideText>
+            <SlideText>code</SlideText>
+          </Slide>
+
+          <Slide>
+            <SlideText>developer</SlideText>
+            <SlideText>skills</SlideText>
           </Slide>
 
           <Slide>
@@ -71,6 +77,16 @@ export default class NativeORJS extends PureComponent {
             <SlideText> </SlideText>
             <SlideText>rendering</SlideText>
             <SlideText>localized date/time format</SlideText>
+          </Slide>
+
+          <Slide>
+            <SlideText>3 ways to implement:</SlideText>
+            <SlideText> </SlideText>
+            <SlideText>pure JS</SlideText>
+            <SlideText>or</SlideText>
+            <SlideText>native + bridge</SlideText>
+            <SlideText>or</SlideText>
+            <SlideText>native view</SlideText>
           </Slide>
 
         </Swiper>

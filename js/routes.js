@@ -1,4 +1,4 @@
-import ProductivityAndPerformance from './01_ProductivityAndPerformance'
+import GettingStarted from './01_GettingStarted'
 import Bridge from './02_Bridge'
 import NativeOrJS from './03_NativeOrJS'
 import CustomNativeViews from './04_CustomNaviteViews'
@@ -23,8 +23,8 @@ export function getNext (currentRouteName) {
 }
 
 const routes = {
-  ProductivityAndPerformance: {
-    screen: ProductivityAndPerformance,
+  GettingStarted: {
+    screen: GettingStarted,
   },
   Bridge: {
     screen: Bridge
