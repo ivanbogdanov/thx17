@@ -9,6 +9,8 @@ import routes, { getNext } from '../routes'
 
 import Example from './Example'
 
+import styles from './styles'
+
 export default class PlatformSpecific extends PureComponent {
 
   static navigationOptions = {
@@ -57,15 +59,15 @@ export default class PlatformSpecific extends PureComponent {
             <SlideText>Some</SlideText>
             <SlideText>Native Components</SlideText>
             <SlideText>depend on</SlideText>
-            <SlideText>platform /</SlideText>
-            <SlideText>os version</SlideText>
+            <SlideText>Platform /</SlideText>
+            <SlideText>OS version</SlideText>
           </Slide>
 
           <Slide>
             <SlideText>Example:</SlideText>
             <SlideText> </SlideText>
             <SlideText>Date Picker,</SlideText>
-            <SlideText>Android ripple effect</SlideText>
+            <SlideText>Android Ripple Effect</SlideText>
             <SlideText>etc</SlideText>
           </Slide>
 
@@ -83,37 +85,3 @@ export default class PlatformSpecific extends PureComponent {
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex:1,
-    backgroundColor:'#d4504c',
-  },
-  item:{
-    backgroundColor:'white',
-    padding:10,
-    paddingLeft:15,
-    paddingRight:15,
-    borderRadius:5,
-    margin:10
-  },
-  itemLabel: {
-    textAlign:'center',
-    fontSize:32,
-    fontFamily: 'SalesforceSans-Light',
-  },
-  icon: {
-    width: 24,
-    height: 24,
-  },
-  mainIconContainer: {
-    flexDirection:'row',
-    justifyContent:'center',
-    alignItems:'center'
-  },
-  mainIcon: {
-    marginTop:50,
-    width: 80,
-    height: 80,
-  }
-})

@@ -82,21 +82,7 @@ export default class ProductivityAndPerformance extends PureComponent {
           </Slide>
 
           <Slide>
-            <SlideText>Your Project</SlideText>
-            <SlideText>is growing</SlideText>
-            <SlideText> </SlideText>
-            <SlideText>Yay!</SlideText>
-          </Slide>
-
-          <Slide>
-            <SlideText>more developers</SlideText>
-            <SlideText>join</SlideText>
-            <SlideText> </SlideText>
-            <SlideText>(different skills)</SlideText>
-          </Slide>
-
-          <Slide>
-            <SlideText>your PM</SlideText>
+            <SlideText>My PM</SlideText>
             <SlideText>is</SlideText>
             <SlideText>excited!</SlideText>
           </Slide>
@@ -106,7 +92,7 @@ export default class ProductivityAndPerformance extends PureComponent {
           </Slide>
 
           <Slide>
-            <SlideText>your UX designer</SlideText>
+            <SlideText>My UX designer</SlideText>
             <SlideText>is exited too!</SlideText>
           </Slide>
 
@@ -118,14 +104,27 @@ export default class ProductivityAndPerformance extends PureComponent {
           </Slide>
 
           <Slide>
+            <SlideText>My Project</SlideText>
+            <SlideText>is growing</SlideText>
+            <SlideText> </SlideText>
+            <SlideText>Yay!</SlideText>
+          </Slide>
+
+          <Slide>
             <SlideText>target several platforms</SlideText>
             <SlideText>Android, iOS, web</SlideText>
           </Slide>
 
+          <Slide>
+            <SlideText>more developers</SlideText>
+            <SlideText>join</SlideText>
+            <SlideText> </SlideText>
+            <SlideText>(different skills)</SlideText>
+          </Slide>
 
           <Slide>
             <SlideText>How to keep</SlideText>
-            <SlideText>your code</SlideText>
+            <SlideText>my code</SlideText>
             <SlideText>productive</SlideText>
             <SlideText>and</SlideText>
             <SlideText>performant?</SlideText>
