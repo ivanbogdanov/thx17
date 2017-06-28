@@ -66,6 +66,20 @@ export default class DataAndState extends PureComponent {
           </Slide>
 
           <Slide>
+            <SlideText>assets: Icons</SlideText>
+            <SlideText>as</SlideText>
+            <SlideText>icon fonts</SlideText>
+            <SlideText>or</SlideText>
+            <SlideText>SVG</SlideText>
+          </Slide>
+
+          <Slide>
+            <SlideText>linting</SlideText>
+            <SlideText>and</SlideText>
+            <SlideText>code formatting</SlideText>
+          </Slide>
+
+          <Slide>
             <SlideText>use</SlideText>
             <SlideText>PropTypes</SlideText>
           </Slide>
@@ -78,9 +92,10 @@ export default class DataAndState extends PureComponent {
           </Slide>
 
           <Slide>
-            <SlideText>Component unit tests:</SlideText>
+            <SlideText>Tests:</SlideText>
             <SlideText> </SlideText>
             <SlideText>Jest</SlideText>
+            <SlideText>Appium</SlideText>
           </Slide>
 
         </Swiper>

@@ -126,7 +126,7 @@ export default class ProductivityAndPerformance extends PureComponent {
           <Slide>
             <SlideText>How to keep</SlideText>
             <SlideText>your code</SlideText>
-            <SlideText>crystal clear</SlideText>
+            <SlideText>productive</SlideText>
             <SlideText>and</SlideText>
             <SlideText>performant?</SlideText>
 

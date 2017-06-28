@@ -9,13 +9,13 @@ import routes, { getNext } from '../routes'
 
 import styles from './styles'
 
-export default class Icons extends PureComponent {
+export default class Info extends PureComponent {
 
   static navigationOptions = {
-    drawerLabel: 'Rendering Icons',
+    drawerLabel: 'Repo URL',
     drawerIcon: ({ tintColor }) => (
       <Theme.Icons.Utility
-        name="image"
+        name="link"
         style={styles.icon}
       />
     )
@@ -41,11 +41,11 @@ export default class Icons extends PureComponent {
       <View style={styles.container}>
         <Swiper onNext={this._handleNext.bind(this)} nextLabel={this.nextRouteComponent.navigationOptions.drawerLabel}>
           <Slide>
-            <SlideText>Rendering</SlideText>
-            <SlideText>Icons</SlideText>
+
+            <SlideText>bit.ly/rntalk</SlideText>
             <SlideUpFadeIn delay={300} style={styles.mainIconContainer}>
               <Theme.Icons.Utility
-                name="image"
+                name="link"
                 style={styles.mainIcon}
                 iconColor='#ffffff'
               />
@@ -53,15 +53,7 @@ export default class Icons extends PureComponent {
           </Slide>
 
           <Slide>
-            <SlideText>Icon fonts</SlideText>
-          </Slide>
-
-          <Slide>
-            <SlideText>SVG</SlideText>
-          </Slide>
-
-          <Slide>
-            <SlideText>SVG animations</SlideText>
+            <SlideText></SlideText>
           </Slide>
 
         </Swiper>

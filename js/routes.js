@@ -1,3 +1,4 @@
+import First from './00_First'
 import GettingStarted from './01_GettingStarted'
 import Bridge from './02_Bridge'
 import NativeOrJS from './03_NativeOrJS'
@@ -5,7 +6,7 @@ import CustomNativeViews from './04_CustomNaviteViews'
 import AnimatedLibrary from './05_AnimatedLibrary'
 import LayoutAnimations from './06_LayoutAnimations'
 import PlatformSpecific from './07_PlatformSpecific'
-import Icons from './08_Icons'
+//import Icons from './08_Icons'
 import DataAndState from './09_DataAndState'
 import Redux from './10_Redux'
 import ReusableComponents from './11_ReusableComponents'
@@ -23,6 +24,9 @@ export function getNext (currentRouteName) {
 }
 
 const routes = {
+  First: {
+    screen: First,
+  },
   GettingStarted: {
     screen: GettingStarted,
   },
@@ -43,9 +47,6 @@ const routes = {
   },
   PlatformSpecific: {
     screen: PlatformSpecific,
-  },
-  Icons: {
-    screen: Icons,
   },
   DataAndState: {
     screen: DataAndState,
